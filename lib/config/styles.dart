@@ -7,6 +7,12 @@ class AppStyles {
 
   /// TODO define all widgets style of the application here
 
+  static final TextStyle headlineLarge = TextStyle(
+    fontSize: AppDimens.largeHeadline,
+    color: AppColors.neutral.shade900,
+    fontWeight: AppStyles.bold,
+  );
+
   static final TextStyle titleLarge = TextStyle(
     fontSize: AppDimens.largeText,
     color: AppColors.neutral.shade900,
@@ -21,6 +27,12 @@ class AppStyles {
 
   static final TextStyle titleSmall = TextStyle(
     fontSize: AppDimens.mediumText,
+    color: AppColors.neutral.shade900,
+    fontWeight: AppStyles.bold,
+  );
+
+  static final TextStyle titleForgotPasswordPage = TextStyle(
+    fontSize: AppDimens.mediumTitle,
     color: AppColors.neutral.shade900,
     fontWeight: AppStyles.bold,
   );
