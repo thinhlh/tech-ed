@@ -48,4 +48,84 @@ class AppStyles {
 
   static const FontWeight bold = FontWeight.bold;
   static const FontWeight extraBold = FontWeight.w900;
+  static const FontWeight homeTitleWeightMedium = FontWeight.w500;
+  static const FontWeight homeTitleWeightRegular = FontWeight.w400;
+
+  /// Home Text Style
+  static final TextStyle homeTitleLarge = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.homeLargeTitle,
+    fontWeight: homeTitleWeightMedium,
+    color: AppColors.textPrimary,
+  );
+
+  static final TextStyle homeCategoryLarge = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.largeText,
+    fontWeight: homeTitleWeightMedium,
+    color: AppColors.textPrimary,
+  );
+
+  static final TextStyle homeCategorySmall = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.smallText,
+    fontWeight: homeTitleWeightRegular,
+    color: AppColors.textSubtitle,
+  );
+
+  static final TextStyle categoryTitle = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.regularText,
+    fontWeight: homeTitleWeightMedium,
+    color: AppColors.textPrimaryLight,
+  );
+
+  static final TextStyle homeTitleMedium = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.smallText,
+    fontWeight: homeTitleWeightRegular,
+    color: AppColors.textSubtitle,
+  );
+
+  static final TextStyle searchField = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.extraSmallText,
+    fontWeight: homeTitleWeightRegular,
+    color: AppColors.textSubtitle,
+  );
+
+  static final TextStyle cateCourseName = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.extraRegularText,
+    fontWeight: homeTitleWeightMedium,
+    color: AppColors.textPrimary,
+  );
+
+  static final TextStyle cateTeacherName = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.extraSmallText,
+    fontWeight: homeTitleWeightRegular,
+    color: AppColors.textPrimary,
+  );
+
+  static final TextStyle cateCourseCount = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.extraSmallText - 1,
+    fontWeight: homeTitleWeightRegular,
+    color: AppColors.textSubtitle,
+  );
+
+  static final TextStyle popularTeacher = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.regularText,
+    fontWeight: homeTitleWeightRegular,
+    color: AppColors.textPrimary,
+  );
+
+  static final TextStyle textButton = TextStyle(
+    fontFamily: 'Plus Jakarta Display',
+    fontSize: AppDimens.mediumText,
+    fontWeight: homeTitleWeightMedium,
+    color: AppColors.textButtonBlue,
+  );
 }

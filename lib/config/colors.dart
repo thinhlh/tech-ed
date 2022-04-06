@@ -48,6 +48,9 @@ class AppColors {
   static final Color scaffoldBackground = neutral.shade200;
   static final Color scaffoldBackgroundDark = neutral.shade800;
 
+  static const Color searchInputBackground = Color(0xFFFFF1F3);
+  static const Color textButtonBlue = Color(0xFF265AE8);
+
   /// Follow design
 
   static const MaterialColor neutral = MaterialColor(0xFF9E9E9E, {
@@ -72,4 +75,7 @@ class AppColors {
 
   /// Popup
   static const Color popUpPrimary = Color(0xFF25555f);
+
+  // Bottom navigation bar background
+  static const Color btmNavBarBackground = Color(0xffFFFFFF);
 }

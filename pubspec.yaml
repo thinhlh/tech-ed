@@ -52,6 +52,7 @@ dependencies:
   # Helper
   intl: ^0.17.0
   logger: ^1.1.0
+  persistent_bottom_nav_bar: ^4.0.2
 
 dev_dependencies:
   flutter_lints: ^1.0.0
@@ -62,8 +63,10 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    # - assets/images/
+    - assets/icons/
     - assets/translations/
+    - assets/images/
+
     # - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

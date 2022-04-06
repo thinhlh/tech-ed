@@ -16,3 +16,7 @@ class HomeProvider extends LoadingProvider {
     title = result.fold((l) => l.message, (r) => r.message);
   }
 }
+
+// import 'package:tech_ed/base/presentation/providers/dialog_provider.dart';
+
+// class HomeProvider extends DialogProvider {}

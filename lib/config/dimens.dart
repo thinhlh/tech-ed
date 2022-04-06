@@ -6,7 +6,7 @@ class AppDimens {
   AppDimens._internal();
 
   // Iphone 12 Pro Max
-  static const Size designSize = Size(428, 926);
+  static const Size designSize = Size(375, 812);
 
   /// 4.h
   static final double smallHeightDimens = 4.h;
@@ -44,11 +44,20 @@ class AppDimens {
   /// 16.r
   static final double extraLargeRadius = 16.r;
 
+  /// 26.sp
+  static final double homeLargeTitle = 26.sp;
+
   /// 22.sp
   static final double largeText = 22.sp;
 
   /// 16.sp
   static final double mediumText = 16.sp;
+
+  /// 18.sp
+  static final double regularText = 18.sp;
+
+  /// 15.sp
+  static final double extraRegularText = 15.sp;
 
   /// 14.sp
   static final double smallText = 14.sp;
@@ -67,6 +76,9 @@ class AppDimens {
 
   /// Button border radius
   static final double buttonBorderRadius = 20.r;
+
+  /// Text Input Field radius
+  static final double textInputFieldRadius = 8.r;
 
   /// Avatar
   static final double avatar = 56.r;
