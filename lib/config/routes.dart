@@ -7,6 +7,7 @@ import 'package:tech_ed/app/sign_in/presentation/pages/sign_in.dart';
 import 'package:tech_ed/app/sign_in/presentation/pages/sign_in_detail.dart';
 import 'package:tech_ed/app/sign_up/presentation/pages/sign_up.dart';
 import 'package:tech_ed/utils/route_util.dart';
+import 'package:tech_ed/app/forgot_password/presentation/pages/forgot_password_page.dart';
 
 class Routes {
   Routes._internal();
@@ -19,6 +20,7 @@ class Routes {
   static const String signUp = '/signUp';
   static const String signIn = '/signIn';
   static const String signInDetail = '/signInDetail';
+  static const String forgotPass = '/forgot';
 
   /// This is where you handle routing by name and arguments
   static Route<dynamic>? onGenerateRoute(RouteSettings routeSettings) {
@@ -52,7 +54,16 @@ class Routes {
           builder: (_) => const SignInDetail(),
         );
       case Routes.about:
-
+      case Routes.forgotPass:
+        {
+          return MaterialPageRoute(
+            settings: routeSettings,
+            builder: (_) => RouteUtil.createPageProvider<HomeProvider>(
+              provider: (_) => HomeProvider(GetIt.I()),
+              child: ForgotPasswordPage(),
+            ),
+          );
+        }
       default:
         return null;
     }

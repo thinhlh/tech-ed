@@ -47,6 +47,9 @@ class AppDimens {
   /// 22.sp
   static final double largeText = 22.sp;
 
+  /// 26.sp
+  static final double largeHeadline = 26.sp;
+
   /// 16.sp
   static final double mediumText = 16.sp;
 
@@ -67,6 +70,9 @@ class AppDimens {
 
   /// 12
   static const double largeElevation = 12;
+
+  ///18
+  static final double mediumTitle = 18.sp;
 
   /// Button border radius
   static final double buttonBorderRadius = 20.r;
