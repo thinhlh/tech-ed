@@ -29,6 +29,8 @@ dependencies:
   google_fonts: ^2.3.1
   cupertino_icons: ^1.0.2
   responsive_framework: ^0.1.7
+  introduction_screen: ^3.0.1
+  form_field_validator: ^1.1.0
 
   # Localization
   easy_localization: ^3.0.0
@@ -63,10 +65,9 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/icons/
-    - assets/translations/
     - assets/images/
-
+    - assets/translations/
+    - assets/icons/
     # - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -50,6 +50,9 @@ class AppDimens {
   /// 22.sp
   static final double largeText = 22.sp;
 
+  /// 26.sp
+  static final double largeHeadline = 26.sp;
+
   /// 16.sp
   static final double mediumText = 16.sp;
 
@@ -58,6 +61,9 @@ class AppDimens {
 
   /// 15.sp
   static final double extraRegularText = 15.sp;
+
+  ///18.sp
+  static final double mediumLargeText = 18.sp;
 
   /// 14.sp
   static final double smallText = 14.sp;
@@ -74,6 +80,9 @@ class AppDimens {
   /// 12
   static const double largeElevation = 12;
 
+  ///18
+  static final double mediumTitle = 18.sp;
+
   /// Button border radius
   static final double buttonBorderRadius = 20.r;
 
@@ -82,4 +91,8 @@ class AppDimens {
 
   /// Avatar
   static final double avatar = 56.r;
+
+  // onboard
+  static final double bodyOnboard = 26.sp;
+  static final double titleOnboard = 14.sp;
 }
