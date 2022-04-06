@@ -72,4 +72,16 @@ class AppColors {
 
   /// Popup
   static const Color popUpPrimary = Color(0xFF25555f);
+
+  /// Title onBoard
+  static const Color titleOnBoard = Color(0xFF9FA3A9);
+
+  /// colorOnboard
+  static const Color colorBlue = Color(0xFF265AE8);
+
+  /// colorButton signUp signIn
+  static const Color colorButton = Color(0xFFEDEEF0);
+
+  /// text color signUp signIn
+  static const Color textColor = Color(0xFF585D69);
 }

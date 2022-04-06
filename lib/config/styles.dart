@@ -25,6 +25,58 @@ class AppStyles {
     fontWeight: AppStyles.bold,
   );
 
+  static final TextStyle titleOnboard = TextStyle(
+    fontSize: AppDimens.titleOnboard,
+    color: AppColors.titleOnBoard,
+    fontWeight: AppStyles.bold,
+  );
+  static final TextStyle bodyOnboard = TextStyle(
+    fontSize: AppDimens.bodyOnboard,
+    color: AppColors.neutral.shade900,
+    fontWeight: AppStyles.bold,
+  );
+  static final TextStyle titleMediumBlue = TextStyle(
+    fontSize: AppDimens.mediumText,
+    color: AppColors.colorBlue,
+    fontWeight: AppStyles.medium,
+  );
+
+  static final TextStyle titleMediumLight = TextStyle(
+    fontSize: AppDimens.mediumLargeText,
+    color: AppColors.backgroundLight,
+    fontWeight: AppStyles.medium,
+  );
+
+  static final TextStyle titleMediumLagre = TextStyle(
+    fontSize: AppDimens.mediumText,
+    color: AppColors.textPrimary,
+    fontWeight: AppStyles.medium,
+  );
+
+  static final TextStyle loginOnboard = TextStyle(
+    fontSize: AppDimens.mediumText,
+    color: AppColors.colorBlue,
+    fontWeight: AppStyles.medium,
+  );
+
+  static final TextStyle staticTextSignInUP = TextStyle(
+    fontSize: AppDimens.mediumText,
+    color: AppColors.neutral.shade900,
+    fontWeight: AppStyles.regular,
+  );
+
+  static final TextStyle textTermCondition = TextStyle(
+    fontSize: AppDimens.smallText,
+    color: AppColors.textColor,
+    fontWeight: AppStyles.regular,
+  );
+
+  static final TextStyle textSignIn = TextStyle(
+    fontSize: AppDimens.mediumText,
+    color: AppColors.colorBlue,
+    fontWeight: AppStyles.medium,
+  );
+
   static final ButtonStyle buttonStyle = ButtonStyle(
     elevation: MaterialStateProperty.all(0),
     backgroundColor: MaterialStateProperty.all(AppColors.primary),
@@ -48,4 +100,6 @@ class AppStyles {
 
   static const FontWeight bold = FontWeight.bold;
   static const FontWeight extraBold = FontWeight.w900;
+  static const FontWeight medium = FontWeight.w500;
+  static const FontWeight regular = FontWeight.w400;
 }

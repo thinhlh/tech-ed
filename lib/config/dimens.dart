@@ -6,7 +6,7 @@ class AppDimens {
   AppDimens._internal();
 
   // Iphone 12 Pro Max
-  static const Size designSize = Size(428, 926);
+  static const Size designSize = Size(375, 812);
 
   /// 4.h
   static final double smallHeightDimens = 4.h;
@@ -50,6 +50,9 @@ class AppDimens {
   /// 16.sp
   static final double mediumText = 16.sp;
 
+  ///18.sp
+  static final double mediumLargeText = 18.sp;
+
   /// 14.sp
   static final double smallText = 14.sp;
 
@@ -70,4 +73,8 @@ class AppDimens {
 
   /// Avatar
   static final double avatar = 56.r;
+
+  // onboard
+  static final double bodyOnboard = 26.sp;
+  static final double titleOnboard = 14.sp;
 }
