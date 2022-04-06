@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tech_ed/app/sign_up/presentation/widgets/button.dart';
 import 'package:tech_ed/config/colors.dart';
+import 'package:tech_ed/config/routes.dart';
 import 'package:tech_ed/config/styles.dart';
 
 class SignUp extends StatefulWidget {
@@ -69,7 +70,9 @@ class _SignUpState extends State<SignUp> {
             Padding(
               padding: EdgeInsets.only(top: 10.0.h),
               child: TextButton(
-                  onPressed: () {},
+                  onPressed: () => Navigator.of(context).pushNamed(
+                        Routes.signIn,
+                      ),
                   style: TextButton.styleFrom(
                     minimumSize: Size.fromHeight(60.h),
                   ),

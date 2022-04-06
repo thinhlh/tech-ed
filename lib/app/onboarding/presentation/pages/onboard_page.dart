@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:tech_ed/app/onboarding/presentation/widgets/page_view_onboard.dart';
-import 'package:tech_ed/config/colors.dart';
-import 'package:tech_ed/config/styles.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -36,23 +33,23 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             image: "Splash3",
             context: context),
       ],
-      done: Text(
+      done: const Text(
         'Start',
         style: TextStyle(fontWeight: FontWeight.w600),
       ),
       onDone: () {},
       showSkipButton: true,
-      skip: Text('skip'),
-      next: Icon(Icons.arrow_forward),
+      skip: const Text('skip'),
+      next: const Icon(Icons.arrow_forward),
       showDoneButton: true,
       dotsDecorator: getDocDecoration(),
     );
   }
 
   DotsDecorator getDocDecoration() => DotsDecorator(
-        color: Color(0xFFBDBDBD),
-        size: Size(10, 10),
-        activeSize: Size(22, 10),
+        color: const Color(0xFFBDBDBD),
+        size: const Size(10, 10),
+        activeSize: const Size(22, 10),
         activeShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),

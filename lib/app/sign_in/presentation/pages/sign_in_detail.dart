@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:tech_ed/app/sign_in/presentation/widgets/text_field_input.dart';
 import 'package:tech_ed/app/sign_in/presentation/widgets/text_field_password.dart';
-import 'package:tech_ed/app/sign_up/presentation/widgets/button.dart';
 import 'package:tech_ed/config/colors.dart';
 import 'package:tech_ed/config/styles.dart';
 
@@ -51,33 +50,37 @@ class _SignInDetailState extends State<SignInDetail> {
                 onTextSubmitted: (str) {},
                 textinputType: TextInputType.name,
                 validator: null,
-                lableText: "user name",
+                lableText: "username",
               ),
             ),
             Padding(
               padding: EdgeInsets.only(top: 54.0.h),
               child: TextFieldInput(
-                  textController: _txtEmailController,
-                  onTextSubmitted: (str) {},
-                  textinputType: TextInputType.emailAddress,
-                  validator: null,
-                  lableText: "email adress"),
+                textController: _txtEmailController,
+                onTextSubmitted: (str) {},
+                textinputType: TextInputType.emailAddress,
+                validator: null,
+                lableText: "email",
+              ),
             ),
             Padding(
               padding: EdgeInsets.only(top: 54.0.h),
               child: PasswordFieldInput(
-                  textController: _txtPasswordController,
-                  onTextSubmitted: (str) {},
-                  textinputType: TextInputType.visiblePassword,
-                  validator: MultiValidator(
-                    [
-                      RequiredValidator(errorText: 'password is required'),
-                      PatternValidator(r'(?=.*?[#?!@$%^&*-])',
-                          errorText:
-                              'passwords must have at least one special character')
-                    ],
-                  ),
-                  lableText: "password"),
+                textController: _txtPasswordController,
+                onTextSubmitted: (str) {},
+                textinputType: TextInputType.visiblePassword,
+                validator: MultiValidator(
+                  [
+                    RequiredValidator(errorText: 'password is required'),
+                    PatternValidator(
+                      r'(?=.*?[#?!@$%^&*-])',
+                      errorText:
+                          'passwords must have at least one special character',
+                    )
+                  ],
+                ),
+                lableText: "password",
+              ),
             ),
             Padding(
               padding: EdgeInsets.only(top: 54.0.h),

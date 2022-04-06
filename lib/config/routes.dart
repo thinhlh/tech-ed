@@ -18,7 +18,7 @@ class Routes {
   static const String onBoard = '/onBoard';
   static const String signUp = '/signUp';
   static const String signIn = '/signIn';
-  static const String signInDetail = 'signInDetail';
+  static const String signInDetail = '/signInDetail';
 
   /// This is where you handle routing by name and arguments
   static Route<dynamic>? onGenerateRoute(RouteSettings routeSettings) {

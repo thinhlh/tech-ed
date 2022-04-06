@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tech_ed/config/colors.dart';
 
 class TextFieldInput extends StatelessWidget {
   final TextEditingController textController;
