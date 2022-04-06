@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:tech_ed/app/home/presentation/pages/home_page.dart';
 import 'package:tech_ed/app/home/presentation/provider/home_provider.dart';
+import 'package:tech_ed/app/page_container/presentation/pages/page_container_page.dart';
+import 'package:tech_ed/app/page_container/presentation/provider/page_container_provider.dart';
 import 'package:tech_ed/app/onboarding/presentation/pages/onboard_page.dart';
 import 'package:tech_ed/app/sign_in/presentation/pages/sign_in.dart';
 import 'package:tech_ed/app/sign_in/presentation/pages/sign_in_detail.dart';
@@ -12,8 +14,9 @@ import 'package:tech_ed/app/forgot_password/presentation/pages/forgot_password_p
 class Routes {
   Routes._internal();
 
-  static String get initial => onBoard;
+  static String get initial => container;
 
+  static const String container = '/home_container';
   static const String home = '/home';
   static const String about = '/about';
   static const String onBoard = '/onBoard';
@@ -54,6 +57,15 @@ class Routes {
           builder: (_) => const SignInDetail(),
         );
       case Routes.about:
+      case Routes.container:
+        return MaterialPageRoute(
+          settings: routeSettings,
+          builder: (_) => RouteUtil.createPageProvider<PageContainerProvider>(
+            provider: (_) => PageContainerProvider(),
+            child: PageContainerPage(),
+          ),
+        );
+
       case Routes.forgotPass:
         {
           return MaterialPageRoute(

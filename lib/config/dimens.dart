@@ -44,6 +44,9 @@ class AppDimens {
   /// 16.r
   static final double extraLargeRadius = 16.r;
 
+  /// 26.sp
+  static final double homeLargeTitle = 26.sp;
+
   /// 22.sp
   static final double largeText = 22.sp;
 
@@ -52,6 +55,12 @@ class AppDimens {
 
   /// 16.sp
   static final double mediumText = 16.sp;
+
+  /// 18.sp
+  static final double regularText = 18.sp;
+
+  /// 15.sp
+  static final double extraRegularText = 15.sp;
 
   ///18.sp
   static final double mediumLargeText = 18.sp;
@@ -76,6 +85,9 @@ class AppDimens {
 
   /// Button border radius
   static final double buttonBorderRadius = 20.r;
+
+  /// Text Input Field radius
+  static final double textInputFieldRadius = 8.r;
 
   /// Avatar
   static final double avatar = 56.r;
