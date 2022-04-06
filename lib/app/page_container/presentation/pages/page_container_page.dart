@@ -17,9 +17,9 @@ class PageContainerPage extends PageStateless<PageContainerProvider> {
     //Create variables for bottom navigation bar
     final List<Widget> _screens = [
       HomePageTemp(),
-      const TempPage(),
-      const TempPage(),
-      const TempPage(),
+      TempPage(parentContext: context),
+      TempPage(parentContext: context),
+      TempPage(parentContext: context),
     ];
     const double _scaleIcon = 2.0;
     final _navBarItems = <PersistentBottomNavBarItem>[
@@ -134,12 +134,19 @@ class PageContainerPage extends PageStateless<PageContainerProvider> {
 }
 
 class TempPage extends StatelessWidget {
-  const TempPage({Key? key}) : super(key: key);
+  final BuildContext parentContext;
+  const TempPage({
+    Key? key,
+    required this.parentContext,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Temp Page"),
+    return Center(
+      child: GestureDetector(
+        onTap: () => Navigator.of(parentContext).pushNamed(Routes.signIn),
+        child: const Text("Log out"),
+      ),
     );
   }
 }

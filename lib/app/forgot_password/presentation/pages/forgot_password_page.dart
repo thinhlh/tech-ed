@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tech_ed/config/colors.dart';
+import 'package:tech_ed/app/common/presentation/widgets/w_text_field.dart';
 import 'package:tech_ed/config/styles.dart';
 import 'package:tech_ed/config/dimens.dart';
 import 'package:tech_ed/app/forgot_password/presentation/pages/forgot_password_check_mail_page.dart';
 
 class ForgotPasswordPage extends StatelessWidget {
+  const ForgotPasswordPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -31,24 +33,13 @@ class ForgotPasswordPage extends StatelessWidget {
                 child: Text('Enter your email',
                     style: AppStyles.titleForgotPasswordPage),
               ),
-              Container(
-                margin: EdgeInsets.only(bottom: 100.h),
-                child: TextFormField(
-                  style: TextStyle(
-                    color: const Color(0xFF70747E),
-                    fontSize: 18.w,
-                  ),
-                  decoration: const InputDecoration(
-                    hintText: "email address",
-                    suffixIcon: Padding(
-                      padding: EdgeInsets.only(bottom: 15.57, right: 18.21),
-                      child: Icon(Icons.remove_red_eye_outlined,
-                          color: Color(0xFF70747E)),
-                    ),
-                  ),
-                ),
+              WTextField(
+                label: 'Email',
+                icon: Icons.email,
+                controller: TextEditingController(),
               ),
-              Container(
+              SizedBox(height: AppDimens.extraLargeHeightDimens),
+              SizedBox(
                 height: 60.h,
                 width: double.infinity,
                 child: OutlinedButton(
@@ -60,7 +51,7 @@ class ForgotPasswordPage extends StatelessWidget {
                                 ForgotPasswordCheckMailPage()));
                   },
                   child: Text(
-                    'sent email',
+                    'Send verification',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: AppDimens.mediumText,

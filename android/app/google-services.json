@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264820428981",
+    "project_id": "tech-ed-aebed",
+    "storage_bucket": "tech-ed-aebed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264820428981:android:d7d840abc019d52e542efc",
+        "android_client_info": {
+          "package_name": "com.thinhlh.tech_ed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264820428981-a065u009kc0bm3osjo5c3dn20a2aclo4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUJugO6WZE2UsVdflObwaRoA8qV5wLEZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264820428981-a065u009kc0bm3osjo5c3dn20a2aclo4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

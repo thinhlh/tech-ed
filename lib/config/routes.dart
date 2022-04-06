@@ -14,7 +14,7 @@ import 'package:tech_ed/app/forgot_password/presentation/pages/forgot_password_p
 class Routes {
   Routes._internal();
 
-  static String get initial => container;
+  static String get initial => onBoard;
 
   static const String container = '/home_container';
   static const String home = '/home';
@@ -67,15 +67,13 @@ class Routes {
         );
 
       case Routes.forgotPass:
-        {
-          return MaterialPageRoute(
-            settings: routeSettings,
-            builder: (_) => RouteUtil.createPageProvider<HomeProvider>(
-              provider: (_) => HomeProvider(GetIt.I()),
-              child: ForgotPasswordPage(),
-            ),
-          );
-        }
+        return MaterialPageRoute(
+          settings: routeSettings,
+          builder: (_) => RouteUtil.createPageProvider<HomeProvider>(
+            provider: (_) => HomeProvider(GetIt.I()),
+            child: ForgotPasswordPage(),
+          ),
+        );
       default:
         return null;
     }
